@@ -1,0 +1,541 @@
+button {
+    color: #555;
+    background-color: #ddd;
+    border: 0px;
+    padding: 5px 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+button.selected {
+    background-color: #fff;
+}
+
+input, textarea {
+    border: 1px solid transparent;
+    color: #444;
+    border-radius: 3px;
+}
+
+input.Number {
+    color: #08f !important;
+    font-size: 12px;
+    border: 0px;
+    padding: 2px;
+    cursor: col-resize;
+}
+
+select {
+    color: #666;
+    background-color: #ddd;
+    border: 0px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+}
+
+select:hover {
+    background-color: #fff;
+}
+
+.editor-panel * {
+    vertical-align: middle;
+}
+
+.editor-panel .Panel {
+    color: #888;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.editor-panel .Panel.collapsed {
+    margin-bottom: 0;
+}
+
+.editor-panel .Row {
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+.Outliner {
+    color: #444;
+    background-color: #fff;
+    padding: 1px;
+    width: 99%;
+    height: 140px;
+    font-size: 12px;
+    cursor: pointer;
+    overflow: auto;
+    outline: none !important;
+    border-radius: 3px;
+}
+
+.Outliner .option {
+    padding: 2px;
+    color: #666;
+    white-space: nowrap;
+    border-radius: 3px;
+}
+
+.Outliner .option:hover {
+    background-color: rgba(37, 69, 172, 0.1);
+}
+
+.Outliner .option.active {
+    background-color: rgba(37, 69, 172, 0.15);
+}
+
+.editor-header {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    line-height: 54px;
+    color: #f0f0f0;
+    background: #1B2431;
+    border-bottom: 1px solid black;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 55px;
+}
+
+.editor-header .logo {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    margin-left: 20px;
+    line-height: initial;
+    vertical-align: middle;
+}
+
+.editor-header p {
+    margin: 0 10px 0 0;
+    -webkit-box-flex: 1;
+    -ms-flex: auto 0;
+    flex: auto 0;
+}
+
+.editor-panel {
+    font-size: 0.75rem;
+    background: #1E3142;
+    border-right: 1px solid black;
+}
+
+.editor-panel {
+    font-family: "Open Sans", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.editor-panel .widget.expand {
+    height: 100%;
+}
+
+.editor-panel .widget-label {
+    display: block;
+    font-size: 13px;
+    color: white;
+}
+
+.editor-panel .widget-label > label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.editor-panel .widget-label > label > .help {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.editor-panel .widget-wrapper {
+    height: inherit;
+}
+
+.editor-panel .vertical-widget > .widget-wrapper > .children {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.editor-panel .vertical-widget > .widget-wrapper > .children .dropbox {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    bottom: -10px;
+    left: -15px;
+    display: none;
+}
+
+.editor-panel .vertical-widget > .widget-wrapper > .children .dropbox.file-upload-drag {
+    display: block;
+}
+
+.editor-panel .vertical-widget > .widget-wrapper > .children > .widget {
+    z-index: auto;
+    opacity: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.editor-panel .vertical-widget.with-margins > .widget-wrapper > .children > .widget {
+    position: relative;
+    margin-top: 10px;
+}
+
+.editor-panel .vertical-widget.with-margins > .widget-wrapper > .children > .widget:first-child {
+    margin-top: 0;
+}
+
+.editor-panel .vertical-widget.with-padding > .widget-wrapper {
+    padding: 10px 15px;
+}
+
+.editor-panel .cam-constraint-label {
+    max-width: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+.editor-panel .horizontal-widget > .widget-wrapper > .children {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.editor-panel .horizontal-widget > .widget-wrapper > .children > .widget {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.editor-panel .horizontal-widget.with-margins > .widget-wrapper > .children > .widget {
+    margin-left: 10px;
+}
+
+.editor-panel .horizontal-widget.with-margins > .widget-wrapper > .children > .widget:first-child {
+    margin-left: 0;
+}
+
+.editor-panel .horizontal-widget.with-padding > .widget-wrapper {
+    padding: 15px;
+}
+
+.editor-panel .tabs-panel {
+    background-color: #1B2431;
+    padding-left: 5px;
+}
+
+.editor-panel .tabs-panel .tab {
+    display: inline-block;
+    color: #bdbdbd;
+    border-right: 1px solid #000000;
+    padding: 7px;
+    min-width: 45px;
+    min-height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.editor-panel .tabs-panel .tab:first-child {
+    border-left: 1px solid #000000;
+    min-width: 46px;
+}
+
+.editor-panel .tabs-panel .tab:hover {
+    color: white;
+    background-color: #2b3842;
+}
+
+.editor-panel .tabs-panel .tab.selected {
+    color: white;
+    background-color: #1E3142;
+}
+
+.editor-panel .tabbed-widget > .widget-wrapper > .panels {
+    height: 100%;
+}
+
+.editor-panel .tabbed-widget > .widget-wrapper > .panels > .panel {
+    position: relative;
+    display: none;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.editor-panel .tabbed-widget > .widget-wrapper > .panels > .panel::-webkit-scrollbar {
+    width: 10px;
+}
+
+.editor-panel .tabbed-widget > .widget-wrapper > .panels > .panel::-webkit-scrollbar-track {
+    background: #a3a3a3;
+}
+
+.editor-panel .tabbed-widget > .widget-wrapper > .panels > .panel::-webkit-scrollbar-thumb {
+    background: #444444;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.editor-panel .tabbed-widget > .widget-wrapper > .panels > .panel.active {
+    display: block;
+}
+
+.editor-panel .group-widget > .widget-wrapper {
+    position: relative;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header {
+    color: white;
+    background: #1B2431;
+    position: relative;
+    height: 30px;
+    padding-left: 20px;
+    font-size: 11px;
+    line-height: 25px;
+    color: #cccccc;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    opacity: 1;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header:hover {
+    color: white;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header > .help {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header > .feature-new {
+    padding: 0 3px;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: white;
+    background-color: #1caad9;
+    border-radius: 3px;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header > .state {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 50px;
+    height: 24px;
+    margin: 2px;
+    margin-left: 0;
+    overflow: hidden;
+    background: #1a1a1a;
+    border-radius: 3px;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header > .state:before, .editor-panel .group-widget > .widget-wrapper > .header > .state:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 46px;
+    height: 20px;
+    margin: 2px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    border: 0 solid #4d4d4d;
+    border-radius: 3px;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header > .state:before {
+    top: 0;
+    left: -34px;
+    padding-right: 6px;
+    color: #1caad9;
+    content: "ON";
+    border-right-width: 6px;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header > .state:after {
+    left: 0;
+    padding-left: 6px;
+    content: "OFF";
+    border-left-width: 6px;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .header:before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 29px;
+    font-family: "FontAwesome";
+    line-height: 29px;
+    text-align: center;
+    content: "\F0DA";
+}
+
+.editor-panel .group-widget > .widget-wrapper > .inner {
+    max-height: 0;
+    padding: 0 15px;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0.25;
+    transition: all 0.2s;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .inner > :first-child {
+    margin-top: 10px;
+}
+
+.editor-panel .group-widget > .widget-wrapper > .inner > :last-child {
+    margin-bottom: 10px;
+}
+
+.editor-panel .group-widget.static > .widget-wrapper > .header > .state {
+    display: none;
+}
+
+.editor-panel .group-widget.opened > .widget-wrapper > .header:before {
+    content: "\F0D7";
+}
+
+.editor-panel .group-widget.opened > .widget-wrapper > .inner {
+    max-height: 2000px;
+    overflow: visible;
+}
+
+.editor-panel .group-widget.active > .widget-wrapper > .header > .state:before {
+    left: 0;
+}
+
+.editor-panel .group-widget.active > .widget-wrapper > .header > .state:after {
+    left: 34px;
+}
+
+.editor-panel .group-widget.active > .widget-wrapper > .inner {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.editor-panel .group-widget.active > .widget-wrapper > .inner .group-widget.active > .widget-wrapper > .inner {
+    pointer-events: auto;
+}
+
+.editor-panel .group-widget.active > .widget-wrapper > .inner .layout-widget .group-widget {
+    pointer-events: auto;
+}
+
+.editor-panel .group-widget .layout-widget .group-widget {
+    pointer-events: none;
+}
+
+.editor-panel .group-widget .group-widget > .widget-wrapper {
+    background: #666666;
+    border-radius: 5px;
+}
+
+.editor-panel .group-widget .group-widget > .widget-wrapper > .header {
+    line-height: 30px;
+    color: #ffffff;
+    background: #777777;
+    border: 0;
+    border-radius: 5px;
+}
+
+.editor-panel .group-widget .group-widget > .widget-wrapper > .header:before {
+    line-height: 30px;
+}
+
+.editor-panel .group-widget .group-widget > .widget-wrapper > .header > .help {
+    width: 20px;
+    line-height: 30px;
+}
+
+.editor-panel .group-widget .group-widget > .widget-wrapper > .header > .state {
+    margin: 3px 3px 3px 0;
+}
+
+.editor-panel .group-widget .group-widget.opened > .widget-wrapper > .header {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.editor-panel .group-widget .group-widget.opened > .widget-wrapper > .inner {
+    overflow: auto;
+    pointer-events: none;
+}
+
+h3 {
+    margin: 0;
+    background-color: rgb(228, 10, 85);
+    background-image: linear-gradient(bottom, rgb(228, 10, 85) 14%, rgb(255, 36, 111) 57%);
+    background-image: -o-linear-gradient(bottom, rgb(228, 10, 85) 14%, rgb(255, 36, 111) 57%);
+    background-image: -moz-linear-gradient(bottom, rgb(228, 10, 85) 14%, rgb(255, 36, 111) 57%);
+    background-image: -webkit-linear-gradient(bottom, rgb(228, 10, 85) 14%, rgb(255, 36, 111) 57%);
+    background-image: -ms-linear-gradient(bottom, rgb(228, 10, 85) 14%, rgb(255, 36, 111) 57%);
+}
+
+h3 a {
+    background: url("../img/sprite.png") 15px 13px no-repeat;
+    display: block;
+    padding: 10px;
+    padding-left: 32px;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(128, 10, 85, 0.5);
+    text-shadow: 1px 1px 1px rgb(128, 10, 85);
+}
+
+h3:hover {
+    background: rgb(228, 10, 85);
+}
+
+h3.open {
+    background: rgb(255, 70, 120);
+}
+
+h3.open a {
+    background-position: 13px -25px;
+}
+
+h3 + div {
+    padding: 10px;
+}
